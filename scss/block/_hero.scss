@@ -1,0 +1,96 @@
+
+.hero {
+position: relative;
+max-width: 1360px;
+}
+.hero__container {
+    content: "";
+    background-image: url(./../../imges/paw1.svg);
+     background-repeat: no-repeat;
+ 
+    
+     
+}
+
+.hero-wrapper {
+    @include flex;
+    
+}
+.hero-img{
+    margin-top: 240px;
+ 
+}
+.hero-title {
+    @include title-style;
+    max-width: 608px;
+    margin-top: 100px;
+}
+.hero-desc {
+    @include sub-title-style;
+    max-width: 495px;
+    margin-top: 29px;
+    margin-bottom: 38px;
+}
+.blue{
+    @include title-style;
+    color: #78C0DE;
+}
+.hero-btn {
+
+font-family: 'Inter Tight', sans-serif;
+font-weight: 500;
+font-size: 16px;
+line-height: 21px;
+color: #FFFFFF;
+background: #333333;
+border-radius: 3px;
+border: none;
+padding: 15px 47px;
+
+}
+.hero-btn:hover{
+    color: #333333;
+    background-color: #FFBD54;
+}
+.hero-btn:active{
+    color: rgba(51, 51, 51, 0.6);
+    background-color: rgba(255, 189, 84, 0.6);
+}
+.hero-img2{
+    position: absolute;
+    right: 0;
+}
+
+@media only screen and (max-width:1050px){
+    .hero-title {
+        max-width: 688px; 
+    }
+    .hero-desc {
+        max-width: 745px;
+        
+    }
+    .hero-wrapper{
+        max-width: 1050px;
+       display: flex;
+       flex-direction: column;
+
+}
+}
+
+@media only screen and (max-width:600px){
+    .hero-title {
+        max-width: 688px; 
+    }
+    .hero-desc {
+        max-width: 745px;
+        
+    }
+    .hero-wrapper{
+        max-width: 600px;
+
+        .hero-img2{
+            display: none;
+         
+        }
+}
+}
